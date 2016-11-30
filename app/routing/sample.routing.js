@@ -12,7 +12,7 @@ const core_1 = require('@angular/core');
 const router_1 = require('@angular/router');
 const appRoutes = [
     { path: '', redirectTo: 'sample', pathMatch: 'full' },
-    { path: 'sample', loadChildren: './sample_child.routing:AppChildRouteModule' }
+    { path: 'sample', loadChildren: './app/routing/sample_child.routing.js#AppChildRouteModule' }
 ];
 let AppRouteModule = class AppRouteModule {
 };
@@ -20,6 +20,9 @@ AppRouteModule = __decorate([
     core_1.NgModule({
         imports: [
             router_1.RouterModule.forRoot(appRoutes)
+        ],
+        exports: [
+            router_1.RouterModule
         ]
     }), 
     __metadata('design:paramtypes', [])

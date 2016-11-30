@@ -5,8 +5,11 @@ import { Component } from '@angular/core';
   template: `
   <h1>Hello {{name}}</h1>
   <div>
-    <a routerLink="/crisis-center" >Crisis Center</a>
+    <a routerLink="../home">Home</a>
   </div>
   `,
 })
-export class HeroListComponent  { name = 'HeroList'; }
+export class HeroListComponent
+{
+  public name:string = 'HeroList';
+}

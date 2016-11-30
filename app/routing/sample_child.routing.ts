@@ -7,7 +7,7 @@ import { HomeComponent } from '../home.component';
 const appChildRoutes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'heroes', component: HeroListComponent }
+  { path: 'heros', component: HeroListComponent }
 ];
 
 @NgModule({
@@ -17,6 +17,9 @@ const appChildRoutes: Routes = [
   declarations: [
     HeroListComponent,
     HomeComponent,
+  ],
+  exports:[
+    RouterModule
   ]
 })
 export class AppChildRouteModule {

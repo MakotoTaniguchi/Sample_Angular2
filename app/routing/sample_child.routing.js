@@ -15,7 +15,7 @@ const home_component_1 = require('../home.component');
 const appChildRoutes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
     { path: 'home', component: home_component_1.HomeComponent },
-    { path: 'heroes', component: hero_list_component_1.HeroListComponent }
+    { path: 'heros', component: hero_list_component_1.HeroListComponent }
 ];
 let AppChildRouteModule = class AppChildRouteModule {
 };
@@ -27,6 +27,9 @@ AppChildRouteModule = __decorate([
         declarations: [
             hero_list_component_1.HeroListComponent,
             home_component_1.HomeComponent,
+        ],
+        exports: [
+            router_1.RouterModule
         ]
     }), 
     __metadata('design:paramtypes', [])
