@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: 'sample', pathMatch: 'full' },
-  { path:'sample', loadChildren:'./app/routing/sample_child.routing.js#AppChildRouteModule' }
+  { path:'sample', loadChildren:'./app/routing/sample_child.routing.js?v=10#AppChildRouteModule' }
 ];
 
 @NgModule({
